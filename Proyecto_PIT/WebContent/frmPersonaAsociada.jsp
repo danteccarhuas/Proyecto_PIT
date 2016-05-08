@@ -11,8 +11,6 @@
 
 <h1>Hola</h1>
 
-<h2>MAY</h2>
-
 	<button class="btn btn-success" id="btnAgregarPersonasAsociadas">
 		<span class="glyphicon glyphicon-floppy-disk"></span>
 	</button>
