@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<h1>Hola</h1>
+
 	<button class="btn btn-success" id="btnAgregarPersonasAsociadas">
 		<span class="glyphicon glyphicon-floppy-disk"></span>
 	</button>
