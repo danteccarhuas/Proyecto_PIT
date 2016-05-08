@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Definimos la plantilla principal de la aplicacion -->
+	<definition name="t_index_con_menu" template="/templates/principalConMenu.jsp" >
+		<put-attribute name="cabecera" value="/templates/cabecera.jsp"/>
+		<put-attribute name="menu" value="/templates/menu.jsp"/>	
+			
+	</definition>
+	
+	<definition name="t_mantener_socio" template="/templates/MantenerSocio.jsp" >
+		<put-attribute name="cabecera" value="/templates/cabecera.jsp"/>
+		<put-attribute name="menu" value="/templates/menu.jsp"/>	
+			
+	</definition>
+	
+	<definition name="t_index_sin_menu" template="/templates/principalSinMenu.jsp">
+		<put-attribute name="cabecera" value="/templates/cabecera.jsp"/>
+	</definition>	
+	<definition name="t_index_simple" template="/templates/principalSimple.jsp">
+	</definition>
+
+	
+ 	<definition name="t_login" extends="t_index_sin_menu">
+		<put-attribute name="central" value="/pages/login.jsp"/>
+	</definition>	
+ 	<definition name="t_intranet" extends="t_index_con_menu">
+		<put-attribute name="central" value="/pages/intranet.jsp"/>
+	</definition>
+		
+ 	
+</tiles-definitions>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="dawi">
+
+	<select id="SQL_traerEnlacesDeUsuario" 
+							parameterType="java.lang.String"
+							resultType="enlaceBeanIbatis">
+			SELECT DISTINCT
+					r.idEnlace,
+					r.descripcion,
+					r.ruta
+			FROM
+					ENLACE r,
+					ROL_ENLACE p,
+					ROL t,
+					USUARIO_ROL q
+			WHERE
+					r.idEnlace = p.idEnlace AND
+					p.idRol = t.idRol AND
+					t.idRol = q.idRol AND
+					q.idUsuario = #{idUsuario}
+			ORDER BY 2		 					
+		
+	</select>
+	
+	<select id="SQL_login" 	parameterType="usuarioBeanIbatis" 
+						    resultType="usuarioBeanIbatis">
+			SELECT 
+				idUsuario as idUsuario,
+				login as login,
+				password as password
+			FROM
+				USUARIO
+			WHERE
+				login = #{login} AND password = #{password} 	
+		
+	</select>
+	
+	<select id="SQL_traeTrabajador" 	parameterType="trabajadorBeanIbatis" 
+						    resultType="trabajadorBeanIbatis">
+			SELECT 
+				idtrabajador as idtrabajador,
+				nombres as nombres,
+				apellidos as apellidos
+			FROM
+				TRABAJADOR
+			WHERE
+				idusuario = #{idUsuario} 	
+		
+	</select>
+	
+</mapper>
+
+
+
