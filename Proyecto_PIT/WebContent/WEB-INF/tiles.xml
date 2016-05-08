@@ -13,7 +13,7 @@
 			
 	</definition>
 	
-	<definition name="t_mantener_socio" template="/templates/MantenerSocio.jsp" >
+	<definition name="t_mantener_socio" template="/MantenerSocio.jsp" >
 		<put-attribute name="cabecera" value="/templates/cabecera.jsp"/>
 		<put-attribute name="menu" value="/templates/menu.jsp"/>	
 			
