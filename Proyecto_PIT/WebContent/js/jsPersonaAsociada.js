@@ -1,11 +1,10 @@
 $(document).ready(function(e){
 	$('#btnAgregarPersonasAsociadas').click(function(e) {
 
-		/*$("#myModal").modal({
+		$("#myModal").modal({
 			keyboard : false,
 			backdrop : 'static'
 
-		});*/
-		alert('hola');
+		});
 	});
 });

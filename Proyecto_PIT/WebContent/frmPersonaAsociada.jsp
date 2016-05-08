@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -100,6 +101,8 @@
 		</div>
 	</div>
 	<!-- Modal Start here-->
-
+<script src="bootstrap/js/jquery-2.1.4.min.js"></script>
+<script src="js/jsPersonaAsociada.js"></script>
+<script src="bootstrap/js/modal.js"></script>
 </body>
 </html>
